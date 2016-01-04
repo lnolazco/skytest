@@ -1,0 +1,20 @@
+<md-content class="md-padding" layout="row" layout-sm="column" ng-init="vm.init()" ng-cloak>
+    <h2 class="md-toolbar-tools">
+        <span>Shopping basket</span>
+    </h2>
+    <md-list>
+      <md-list-item class="md-3-line" ng-repeat="item in vm.products">
+        <div class="md-list-item-text">
+          <h3>{{item.category}}</h3>
+          <h4>{{item.product}}</h4>
+        </div>
+        <md-divider ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+    <div layout="row" layout-align="end center">
+        <md-button class="md-raised">Proceed</md-button>
+        <md-button class="md-raised" ng-click="vm.clear()">Clear</md-button>
+    </div>
+
+
+</md-content>

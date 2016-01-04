@@ -1,0 +1,29 @@
+{
+  "name": "skytest",
+  "description": "Sky technology unattended programming test product selection",
+  "main": "server/server.js",
+  "authors": [
+    "Luis Nolazco <lnolazco@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~1.0.1",
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-cookies": "~1.4.8",
+    "angular-resource": "~1.4.8"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.8"
+  }
+}

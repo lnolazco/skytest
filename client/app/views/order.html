@@ -1,0 +1,38 @@
+<md-content class="md-padding" layout="row" layout-sm="column" ng-init="vm.init()">
+
+    <div flex="33" flex-sm="100" flex-xs="100" ng-repeat="item in vm.categories">
+        <md-card>
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">{{item.name}}</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <md-checkbox ng-repeat="product in item.products"
+                    aria-label="product.product"
+                    ng-click="vm.addProduct(product)"
+                    ng-model="product.checked">
+                    {{product.product}}
+                </md-checkbox>
+            </md-card-content>
+        </md-card>
+    </div>
+    <div flex="33" flex-sm="100" flex-xs="100" >
+        <md-card>
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Basket</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <md-list-item ng-click="vm.removeProduct(item)" ng-repeat="item in vm.basket">
+                    <p> {{ item.product }} </p>
+                </md-list-item>
+            </md-card-content>
+            <md-button class="md-raised md-warn"
+                ui-sref="home.checkout" ng-disabled="vm.basket.length === 0">Checkout</md-button>
+        </md-card>
+
+    </div>
+
+</md-content>

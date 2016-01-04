@@ -1,0 +1,22 @@
+{
+  "name": "skytest",
+  "version": "1.0.0",
+  "description": "sky test",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "9",
+    "inert": "^3.2.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.16",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "protractor-cucumber": "^0.1.8"
+  }
+}
