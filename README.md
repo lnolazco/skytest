@@ -74,5 +74,4 @@ protractor e2e/conf.js
 * Add automatic task manager (grunt, gulp)
 * Add testing for backend hapi
 
-Thanks
 Luis
