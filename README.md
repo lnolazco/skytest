@@ -33,6 +33,9 @@ webdriver-manager start
 
 * The webdriver-manager needs to be started, otherwise the tests won't work.
 
+To stop the driver use the following url:
+http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer
+
 ## HOW TO INSTALL
 
 ``` shell
