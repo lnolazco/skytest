@@ -32,7 +32,6 @@
          */
         function init() {
             var customerid = $cookies.get('customerid');
-
             customerService.getLocation(customerid)
                 .then(function (data) {
                     catalogueService.getCatalogue(data.location)

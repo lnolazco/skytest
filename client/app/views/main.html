@@ -1,16 +1,10 @@
-<div layout="column" flex>
+<div flex>
     <md-toolbar layout="row" layout-align="end center">
-        <md-button hide-sm class="toolbar-button" aria-label="Search">
-            <i class="material-icons">search</i>
+        <md-button class="toolbar-button" aria-label="Search" ui-sref="home.selectcustomer">
+            <i class="material-icons">Customers</i>
         </md-button>
-        <md-button hide-sm class="toolbar-button" aria-label="Notifications">
-            <i class="material-icons">notifications</i>
-        </md-button>
-        <!--<md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Menu">
-            <i class="material-icons">menu</i>
-        </md-button>-->
     </md-toolbar>
-    <md-content flex class="md-padding page-content">
+    <md-content>
         <div ui-view></div>
     </md-content>
 </div>

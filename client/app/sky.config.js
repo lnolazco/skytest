@@ -35,7 +35,21 @@
             url: '/checkout',
             templateUrl: 'app/views/checkout.html',
             controller: 'Checkout',
-            controllerAs: 'vm'
+            controllerAs: 'vm',
+            data: {
+                title: 'Confirmation order',
+                buttons: true
+            }
+          })
+          .state('home.confirmed', {
+            url: '/checkout',
+            templateUrl: 'app/views/checkout.html',
+            controller: 'Checkout',
+            controllerAs: 'vm',
+            data: {
+                title: 'Thanks for your purchased',
+                buttons: false
+            }
           });
 
         $urlRouterProvider.otherwise('/selectcustomer');

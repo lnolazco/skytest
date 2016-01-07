@@ -16,6 +16,9 @@
         var vm = this;
         //variables
         vm.products = [];
+        vm.title = $state.current.data.title;
+        vm.showButtons = $state.current.data.buttons;
+
         //methods
         vm.init = init;
         vm.clear = clear;

@@ -1,7 +1,7 @@
 <md-list ng-cloak ng-init="vm.init()">
-  <md-subheader class="md-no-sticky">Select customer</md-subheader>
-  <md-list-item ng-repeat="customer in vm.customers" ng-click="vm.select(customer)">
-    <img alt="{{ customer.name }}" ng-src="img/sky.png" class="md-avatar" />
-    <p>{{ customer.name }}</p>
-  </md-list-item>
+    <h2 id="title" class="md-toolbar-tools">Customer selection</h2>
+    <md-list-item ng-repeat="customer in vm.customers" ng-click="vm.select(customer)">
+        <img alt="{{ customer.name }}" ng-src="img/sky.png" class="md-avatar" />
+        <p>{{ customer.name }}</p>
+    </md-list-item>
 </md-list>
