@@ -15,6 +15,12 @@
           var $state = {
               go: function (view) {
                   return;
+              },
+              current: {
+                  data: {
+                      title:'Title',
+                      buttons: true
+                  }
               }
           };
           var orderService = {

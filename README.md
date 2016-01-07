@@ -36,7 +36,9 @@ webdriver-manager start
 ## HOW TO INSTALL
 
 ``` shell
-git clone
+git clone https://github.com/lnolazco/skytest.git
+
+cd skytest
 
 npm install
 
@@ -45,9 +47,12 @@ bower install
 
 ## HOW TO RUN THE APP
 
+Execute:
 ``` shell
 node .
-
+```
+Open page in the browser:
+``` shell
 localhost:3000
 ```
 
@@ -63,9 +68,11 @@ protractor e2e/conf.js
 ```
 
 ## THINGS TO IMPROVE
-* Add database.
+* Add database
 * Add cucumber.js
 * Improve design
+* Add automatic task manager (grunt, gulp)
+* Add testing for backend hapi
 
 Thanks
 Luis
