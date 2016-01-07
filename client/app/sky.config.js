@@ -47,7 +47,7 @@
             controller: 'Checkout',
             controllerAs: 'vm',
             data: {
-                title: 'Thanks for your purchased',
+                title: 'Thanks for your purchase',
                 buttons: false
             }
           });
